@@ -1,0 +1,83 @@
+/*body{
+	background-color: #D3AF00;
+	background: linear-gradient( 180deg, #FFF291, #D6A904);
+	color: #FFF;
+}*/
+
+.timer {
+	width: 100%;
+	display: table;
+}
+
+#timer-progressbar {
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 4px;
+	width: 100%;
+}
+#timer-progressbar > div{
+	height: 100%;
+	background-color: #2673FF;
+}
+
+#left-time {
+	display: table-cell;
+	text-align: center;
+	margin: 0 auto;
+	vertical-align: middle;
+	padding: 120px 0px;
+}
+
+#left-time > span {
+	font-size: 56px;
+	margin: 0 4px;
+}
+
+.input-group--time {
+	text-align: center;
+	margin: 0px 0px 24px;
+}
+
+.input-group--time > * {
+	margin:0 4px;
+}
+
+.input-group--time > span{
+	font-size: 40px;
+	font-weight: 200;
+}
+
+.input--timer {
+	border: none;
+	border-bottom: solid 3px #000;
+	display: inline-block;
+	width: 64px;
+	font-size: 40px;
+	text-align: center;
+	padding: 0;
+	outline: none;
+}
+
+.btn--timer{
+	display: block;
+	font-size: 20px;
+	font-weight: 300;
+	width: 248px;
+	border-radius: 4px;
+	border-style: none;
+	color: #FFFFFF;
+	margin: 36px auto;
+	position: relative;
+	cursor: pointer;
+	outline: none;
+}
+
+.btn-start {
+	background-color: #2673FF;
+}
+
+.btn-stop {
+	background-color: #E84202;
+}
