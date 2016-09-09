@@ -1,6 +1,8 @@
 var glob_entries = require('webpack-glob-entries')
 
 module.exports = {
+    watch: true,
+
     entry: glob_entries("./src/*.react.js"),
 
     output: {
