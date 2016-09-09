@@ -20,6 +20,8 @@
     "bootstrap": "^3.3.6",
     "gulp": "^3.9.1",
     "gulp-babel": "^6.1.2",
+    "gulp-strip-debug": "^1.1.0",
+    "gulp-uglify": "^2.0.0",
     "webpack": "^1.12.14",
     "webpack-glob-entries": "^1.0.1",
     "webpack-stream": "^3.2.0"
