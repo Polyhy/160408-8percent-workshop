@@ -1,7 +1,7 @@
 var glob_entries = require('webpack-glob-entries')
 
 module.exports = {
-    entry: glob_entries("./src/*.react.js"),
+    entry: glob_entries("./src/*.js"),
 
     output: {
         path: __dirname + "/dist",
@@ -11,11 +11,12 @@ module.exports = {
     module: {
         loaders: [
             {
-                test: /\.js$/,
+                // jsx 파일 처리를 위해 필요
+                test: /\.react.js$/,
                 exclude: /node_modules/,
                 loader: 'babel-loader',
                 query: {
-                    presets: ["react", "es2015"],
+                    presets: ["react"],
                     cacheDirectory: true
                 }
             }
