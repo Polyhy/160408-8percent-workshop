@@ -1,7 +1,7 @@
 var React = require("react");
 
 var LeftTime = require("./left-time.react.js");
-var deepCopyObj = require("./deep-copy-obj.js");
+var deepCopyObj = require("../modules/deep-copy-obj.js");
 
 var Timer = React.createClass({
 	timer: null,
