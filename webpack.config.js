@@ -1,11 +1,11 @@
+var glob_entries = require('webpack-glob-entries')
+
 module.exports = {
-    entry: {
-        javascript: "./src/app.react.js"
-    },
+    entry: glob_entries("./src/*.react.js"),
 
     output: {
         path: __dirname + "/dist",
-        filename: "bundle.js"
+        filename: "[name].js"
     },
 
     module: {
