@@ -6,7 +6,7 @@ var stripDebug = require('gulp-strip-debug');
 
 gulp.task('default', function() {
   return gulp.src('./src/*.js')
-    .pipe(webpack(require('./webpack.config.js')))
+    .pipe(webpack(require('./gulp-webpack.config.js')))
     // webpack에서 처리해도 무방
     .pipe(stripDebug())
     .pipe(babel({
