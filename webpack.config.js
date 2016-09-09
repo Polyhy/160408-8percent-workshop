@@ -1,13 +1,6 @@
 var glob_entries = require('webpack-glob-entries')
 
 module.exports = {
-    entry: glob_entries("./src/*.js"),
-
-    output: {
-        path: __dirname + "/dist",
-        filename: "[name].js"
-    },
-
     module: {
         loaders: [
             {
